@@ -1,0 +1,14 @@
+.btn {
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.8rem;
+    background: #00d1ce;
+    border: none;
+    border-radius: 2rem;
+    font-size: 15px;
+    color: #ffffff;
+}
+a {
+    color: #5a6978;
+    text-decoration: none;
+}

@@ -1,49 +1,58 @@
+import '../assets/styles/Rates.css';
+import GeneralButton from './GeneralButton';
+
 const Rates = () => {
     return ( 
-        <div>
-            <div>
-                <p>Tu tarifa es de:</p>
-                <p>$30 USD</p>
-                <p>mensuales</p>
-            </div>
-            <form className='flex'>
-                <div className='flex-column'>
+        <div className='rates'>
+            <p className='title'>EN UN PLAN DE USO:</p>
+            <form className='plans'>
+                <div>
                     <input type="radio" id="ecologico" name="ecologico" value="ecologico" />
-                    <label for="male">ECOLOGICO</label>
+                    <label htmlFor="male">ECOLOGICO</label>
                     <p>Menos de 500 km al mes</p>
                 </div>
                 <div>
                     <input type="radio" id="normal" name="normal" value="normal" />
-                    <label for="male">NORMAL</label>
+                    <label htmlFor="male">NORMAL</label>
                     <p>Entre 500 y 1200 km al mes</p>
                 </div>
                 <div>
                     <input type="radio" id="intensivo" name="intensivo" value="intensivo" />
-                    <label for="male">INTENSIVO</label>
+                    <label htmlFor="male">INTENSIVO</label>
                     <p>Entre 1200 y 1600 km al mes</p>
                 </div>
             </form>
             <p>No te preocupes si despues quieres cambiar de plan de uso, lo puedes cambiar cuando lo requieras.</p>
-            <p>Comparado con un seguro tradicional tendrás un ahorro aproximado de:</p>
+            <div className='tarifa'>
+                <p className='title'>TU TARIFA ES DE:</p>
+                <p className='tarifa-total'>$30 USD</p>
+                <p className='mensuales'>mensuales</p>
+            </div>
+            <div className='ahorro'>
+                <p>Comparado con un seguro tradicional tendrás un ahorro aproximado de:</p>
+                <p>$140 mensuales</p>
+            </div>
             <div>
-                <p>QUE TE INCLUYE</p>
+                <p className='title'>QUE TE INCLUYE</p>
                 <table>
-                    <tr>
-                        <th>COBERTURA</th>
-                        <th>SUMA ASEGURADA</th>
-                        <th>DEDUCIBLE</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Perdida total por robo o daño
-                            <button>¿Qué cubre?</button>
-                        </td>
-                        <td>$100</td>
-                        <td>10% de la suma asegurada</td>
-                    </tr>
+                        <tr>
+                            <th>COBERTURA</th>
+                            <th>SUMA ASEGURADA</th>
+                            <th>DEDUCIBLE</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    Perdida total por robo o daño
+                                    <button>¿Qué cubre?</button>
+                                </div>
+                            </td>
+                            <td>$100</td>
+                            <td>10% de la suma asegurada</td>
+                        </tr>
                 </table>
             </div>
-            <button>Continuar</button>
+            <GeneralButton />
         </div>
      );
 }

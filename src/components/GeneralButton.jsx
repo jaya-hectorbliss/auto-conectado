@@ -1,7 +1,9 @@
+import '../assets/styles/GeneralButton.css';
+
 const GeneralButton = () => {
     return ( 
-        <div className='flex-column'>
-            <button>Continuar</button>
+        <div>
+            <button className='btn'>Continuar</button>
             <a href='/'>Regresar</a>
         </div>
      );
