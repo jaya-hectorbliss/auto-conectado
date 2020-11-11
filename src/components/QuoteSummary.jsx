@@ -1,6 +1,8 @@
+import '../assets/styles/QuoteSummary.css';
+
 const QuoteSummary = () => {
     return ( 
-        <div className='flex'>
+        <div className='quote-summary'>
             <div>
                 <p>TU TARIFA ES DE:</p>
                 <p>$35 USD mensuales</p>
@@ -9,7 +11,7 @@ const QuoteSummary = () => {
                 <table>
                     <tr>
                         <td>PARA TU:</td>
-                        <td>CARRITO</td>
+                        <td>CARRITO CARRITO</td>
                     </tr>
                     <tr>
                         <td>EN LA CIUDAD:</td>

@@ -3,7 +3,7 @@ import Header from "./Header";
 const PaymentForm = () => {
     return ( 
         <div>
-            <form className='flex-column'>
+            <form className='data-form'>
                 <label htmlFor='card-name'>Nombre del tarjetahabiente</label>
                 <input type='text' name='card-name' />
                 <label htmlFor='card-number'>Número de tarjeta de crédito</label>

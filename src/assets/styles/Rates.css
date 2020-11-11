@@ -73,11 +73,12 @@ tr th:last-child  {
     border-bottom: 1px solid #d8dbe1;
     font-size: 0.8rem;
     text-align: center;
+    color: #47525e;
 }
-tr td:first-child {
+.rates table tr td:first-child {
     border-left: 2px solid #d8dbe1;
 }
-tr td:last-child  {
+.rates table tr td:last-child  {
     border-right: 2px solid #d8dbe1;
 }
 .rates table div {

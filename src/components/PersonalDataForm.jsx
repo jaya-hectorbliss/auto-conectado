@@ -1,7 +1,7 @@
 const PersonalDataForm = () => {
     return ( 
         <div>
-            <form className='flex-column'>
+            <form className='data-form'>
                 <label htmlFor='personal-id'>Numero de indentificación personal</label>
                 <input type='text' name='personal-id' />
                 <label htmlFor='name'>Nombres</label>

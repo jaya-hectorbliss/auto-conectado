@@ -1,0 +1,43 @@
+.quote-summary {
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+    color: #ffffff;
+    background: #343f4b;
+}
+.quote-summary div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote-summary div p {
+    margin: 0;
+}
+.quote-summary div p:last-child {
+    width: 85%;
+    margin: 0.2rem;
+    background: #ffffff;
+    border: 1px solid #00d1ce;
+    border-radius: 15px;
+    color: #00d1ce;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.quote-summary table td:first-child {
+    text-align: right;
+}
+.quote-summary table td:last-child {
+    text-align: left;
+    color: #00d1ce;
+}
+.quote-summary a {
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+}
