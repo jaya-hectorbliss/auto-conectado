@@ -2,9 +2,27 @@ body {
   width: 100%;
   height: auto;
 }
+.container {
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+}
+h4 {
+  text-align: center;
+}
 .data-form {
   display: flex;
   flex-direction: column;
   width: 60%;
   padding: 0 1rem;
+}
+.data-form label {
+  font-size: 14px;
+  color: #47525e;
+}
+.data-form input {
+  width: auto;
+  min-width: 10rem;
+  height: 1.5rem;
+  border: 1px solid #00d1ce;
+  border-radius: 1rem;
 }

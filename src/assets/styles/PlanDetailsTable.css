@@ -1,0 +1,56 @@
+.plan-details-table {
+    margin-bottom: 5.2rem;
+}
+.rates table {
+    border-collapse: collapse;
+}
+.rates table th {
+    background: #262b2d;
+    color: #ffffff;
+    width: 30%;
+    padding: 0.3rem;
+}
+tr th:first-child {
+    border-radius: 1rem 0 0 0;
+}
+tr th:last-child  {
+    border-radius: 0 1rem 0 0;
+}
+.rates table td {
+    height: 4rem;
+    border-bottom: 1px solid #d8dbe1;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #47525e;
+}
+.rates table tr td:first-child {
+    border-left: 2px solid #d8dbe1;
+}
+.rates table tr td:last-child  {
+    border-right: 2px solid #d8dbe1;
+}
+.rates table div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-cobertura {
+    display: block;
+    height: 1rem;
+    font-size: 0.6rem;
+    color: #ffffff;
+    background: #00d1ce;
+    border: none;
+    border-radius: 1rem;
+}
+.btn-suma-asegurada {
+    background: none;
+    border: none;
+}
+.btn-suma-asegurada > span {
+    font-size: 1.5rem;
+}
+.terms {
+    margin: 0;
+    font-size: 9px;
+}

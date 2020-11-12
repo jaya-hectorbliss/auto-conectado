@@ -1,8 +1,9 @@
+import GeneralButton from "./GeneralButton";
 import Header from "./Header";
 
 const PaymentForm = () => {
     return ( 
-        <div>
+        <div className='container'>
             <form className='data-form'>
                 <label htmlFor='card-name'>Nombre del tarjetahabiente</label>
                 <input type='text' name='card-name' />
@@ -20,6 +21,7 @@ const PaymentForm = () => {
                     <label htmlFor="male">No</label>
                 </div>
             </form>
+            <GeneralButton text='Continuar' route='/registro-completado' back='/datos-personales' />
         </div>
      );
 }

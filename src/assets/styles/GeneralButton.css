@@ -1,3 +1,12 @@
+.general-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    background: #ffffff;
+}
 .btn {
     width: 100%;
     height: 3rem;
@@ -8,7 +17,13 @@
     font-size: 15px;
     color: #ffffff;
 }
-a {
+a:last-child {
     color: #5a6978;
     text-decoration: none;
+    margin-top: 0.1rem;
+    padding-bottom: 0.3rem;
+}
+.general-button span {
+    font-size: 1.2rem;
+    font-weight: 700;
 }

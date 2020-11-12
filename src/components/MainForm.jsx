@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../assets/styles/MainForm.css';
 
 const MainForm = () => {
@@ -31,7 +32,7 @@ const MainForm = () => {
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
             </select>
-            <button>COTIZAR</button>
+            <Link to='/planes'><button>COTIZAR</button></Link>
         </form>
      );
 }

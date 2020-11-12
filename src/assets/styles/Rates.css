@@ -1,27 +1,28 @@
-.rates {
-    padding: 0.3rem 1rem;
-    font-size: 0.8rem;
-}
 .plans {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 0.8rem;
+    font-size: 0.74rem;
     text-align: center;
 }
 .plans div {
     width: 29%;
+    margin: 0.3rem;
     padding: 0.3rem;
     border: 1px solid #9ca5af;
     border-radius: 1rem;
+    font-weight: 700;
 }
 .plans div label {
     color: #00d1ce;
 }
 .title {
     font-size: 0.9rem;
-    font-weight: 800;
+    font-weight: 900;
     margin: 0.5rem;
+}
+.p-info {
+    margin: 0.3rem 0.5rem 1.5rem 0.5rem;
 }
 .tarifa {
     text-align: center;
@@ -40,6 +41,7 @@
     font-size: 1rem;
 }
 .ahorro {
+    margin: 0.7rem 1rem;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -51,46 +53,5 @@
     text-align: center;
     flex: 1;
     color: #00d1ce;
-    font-weight: bolder;
-}
-.rates table {
-    border-collapse: collapse;
-}
-.rates table th {
-    background: #262b2d;
-    color: #ffffff;
-    width: 30%;
-    padding: 0.3rem;
-}
-tr th:first-child {
-    border-radius: 1rem 0 0 0;
-}
-tr th:last-child  {
-    border-radius: 0 1rem 0 0;
-}
-.rates table td {
-    height: 4rem;
-    border-bottom: 1px solid #d8dbe1;
-    font-size: 0.8rem;
-    text-align: center;
-    color: #47525e;
-}
-.rates table tr td:first-child {
-    border-left: 2px solid #d8dbe1;
-}
-.rates table tr td:last-child  {
-    border-right: 2px solid #d8dbe1;
-}
-.rates table div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.rates table td button {
-    display: block;
-    font-size: 0.7rem;
-    color: #ffffff;
-    background: #00d1ce;
-    border: none;
-    border-radius: 1rem;
+    font-weight: 900;
 }

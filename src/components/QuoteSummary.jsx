@@ -9,18 +9,20 @@ const QuoteSummary = () => {
             </div>
             <div>
                 <table>
-                    <tr>
-                        <td>PARA TU:</td>
-                        <td>CARRITO CARRITO</td>
-                    </tr>
-                    <tr>
-                        <td>EN LA CIUDAD:</td>
-                        <td>AQUI</td>
-                    </tr>
-                    <tr>
-                        <td>PLAN DE USO:</td>
-                        <td>NORMAL</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>PARA TU:</td>
+                            <td>NISSAN VERSA 2015</td>
+                        </tr>
+                        <tr>
+                            <td>EN LA CIUDAD:</td>
+                            <td>QUITO</td>
+                        </tr>
+                        <tr>
+                            <td>PLAN DE USO:</td>
+                            <td>NORMAL</td>
+                        </tr>
+                    </tbody>
                 </table>
                 <a href='/'>Editar</a>
             </div>

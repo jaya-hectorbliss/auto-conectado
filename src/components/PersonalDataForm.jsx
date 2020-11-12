@@ -1,6 +1,8 @@
+const { default: GeneralButton } = require("./GeneralButton")
+
 const PersonalDataForm = () => {
     return ( 
-        <div>
+        <div className='container'>
             <form className='data-form'>
                 <label htmlFor='personal-id'>Numero de indentificación personal</label>
                 <input type='text' name='personal-id' />
@@ -17,6 +19,7 @@ const PersonalDataForm = () => {
                 <label htmlFor='phone'>Número telefónico</label>
                 <input type='text' name='phone' />
             </form>
+            <GeneralButton text='Continuar' route='/datos-de-pago' back='/datos-auto' />
         </div>
      );
 }

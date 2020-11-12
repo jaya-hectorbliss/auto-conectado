@@ -7,8 +7,11 @@ const Main = () => {
         <div className='main'>
             <div className='logo-container'>
                 <img src={logo} alt='logo-auto-conectado' />
-                <p>TU SEGURO POR KILOMETRO QUE PREMIA TU BUENA CONDUCCIÓN</p>
-                <a href='/'>Ver más</a>
+                <div>
+                    <p>TU SEGURO POR KILOMETRO QUE</p>
+                    <p>PREMIA TU BUENA CONDUCCIÓN</p>
+                    <a href='/'>Ver más</a>
+                </div>
             </div> 
             <MainForm />
         </div>

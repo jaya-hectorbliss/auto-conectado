@@ -1,16 +1,14 @@
 import QuoteSummary from "../components/QuoteSummary";
-
-const { default: GeneralButton } = require("../components/GeneralButton")
-const { default: Header } = require("../components/Header")
-const { default: PaymentForm } = require("../components/PaymentForm")
+import Header from "../components/Header";
+import PaymentForm from "../components/PaymentForm";
 
 const PaymentData = () => {
     return ( 
         <div>
             <Header />
             <QuoteSummary />
+            <h4>SOLO FALTA TU INFORMACIÓN DE PAGO</h4>
             <PaymentForm />
-            <GeneralButton />
         </div>
      );
 }

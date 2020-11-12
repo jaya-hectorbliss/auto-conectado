@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 4rem;
+    position:fixed;
+    bottom: 2rem;
 }
 .main-form select {
     appearance: none;
     width: 80%;
-    height: 3.4rem;
+    height: 3.3rem;
     margin: 0.2rem;
     background: rgba(255, 255, 255, 0.6);
     border: 2px solid #00d1ce;
@@ -17,6 +18,10 @@
     text-align: center;
     text-align-last: center;
     font-weight: bold;
+}
+.main a {
+    width: 100%;
+    text-align: center;
 }
 .main-form button {
     width: 80%;

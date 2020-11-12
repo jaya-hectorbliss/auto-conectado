@@ -1,3 +1,4 @@
+import GeneralButton from "../components/GeneralButton";
 import Header from "../components/Header";
 import Rates from "../components/Rates";
 
