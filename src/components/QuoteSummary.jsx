@@ -24,7 +24,7 @@ const QuoteSummary = () => {
                         </tr>
                     </tbody>
                 </table>
-                <a href='/'>Editar</a>
+                <a href='/'><i className="fa fa-edit"></i> Editar</a>
             </div>
         </div>
      );

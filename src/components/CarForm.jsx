@@ -2,7 +2,7 @@ import GeneralButton from "./GeneralButton";
 
 const CarForm = () => {
     return ( 
-        <div className='container'>
+        <div className='Container'>
             <form className='data-form'>
                 <label htmlFor='placa'>Número de placa</label>
                 <input type='text' name='placa' />

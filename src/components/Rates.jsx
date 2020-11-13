@@ -4,7 +4,7 @@ import PlanDetailsTable from './PlanDetailsTable';
 
 const Rates = () => {
     return ( 
-        <div className='container rates'>
+        <div className='Container rates'>
             <p className='title'>EN UN PLAN DE USO:</p>
             <form className='plans'>
                 <div>

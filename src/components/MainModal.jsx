@@ -2,9 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import { useState } from 'react';
 
+function rand() {
+  return Math.round(Math.random() * 20) - 10;
+}
+
 function getModalStyle() {
-  const top = 50;
-  const left = 50;
+  const top = 50 + rand();
+  const left = 50 + rand();
 
   return {
     top: `${top}%`,
@@ -19,30 +23,29 @@ const useStyles = makeStyles((theme) => ({
     width: '60%',
     height: 'auto',
     backgroundColor: theme.palette.background.paper,
+    // border: '2px solid #000',
+    // boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
-  cerrar: {
-    textAlign: 'right',
-    fontWeight: 'bold',
-    cursor: 'pointer',
-  }
 }));
 
-const PlanModal = ({title, content}) => {
+const MainModal = ({title, content}) => {
     const classes = useStyles();
+    // getModalStyle is not a pure function, we roll the style only on the first render
     const [modalStyle] = useState(getModalStyle);
     const [open, setOpen] = useState(false);
   
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
   
     const body = (
       <div style={modalStyle} className={classes.paper}>
-        <h2 id="simple-modal-title">{title}</h2>
-        <p id="simple-modal-description">
-          {content}
-        </p>
-        <p className={classes.cerrar} onClick={handleClose}>Cerrar</p>
+        
       </div>
     );
   
@@ -61,4 +64,4 @@ const PlanModal = ({title, content}) => {
    );
 }
  
-export default PlanModal;
+export default MainModal;

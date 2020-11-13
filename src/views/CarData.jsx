@@ -10,7 +10,7 @@ const CarData = () => {
         <div className='car-data'>
             <Header />
             <QuoteSummary />
-            <ProgressBar done="46"/>
+            <ProgressBar done="30"/>
             <h4>REQUERIMOS ALGUNOS DATOS DE TU AUTO</h4>
             <CarForm />
         </div>

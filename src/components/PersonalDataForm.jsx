@@ -1,17 +1,24 @@
-const { default: GeneralButton } = require("./GeneralButton")
+import '../assets/styles/PersonalDataForm.css';
+import GeneralButton from "./GeneralButton";
 
 const PersonalDataForm = () => {
     return ( 
-        <div className='container'>
-            <form className='data-form'>
+        <div className='Container'>
+            <form className='data-form personal'>
                 <label htmlFor='personal-id'>Numero de indentificación personal</label>
                 <input type='text' name='personal-id' />
                 <label htmlFor='name'>Nombres</label>
                 <input type='text' name='name' />
-                <label htmlFor='ap-paterno'>Apellido paterno</label>
-                <input type='text' name='ap-paterno' />
-                <label htmlFor='ap-materno'>Apellido materno</label>
-                <input type='text' name='ap-materno' />
+                <div>
+                    <div>
+                        <label htmlFor='ap-paterno'>Apellido paterno</label>
+                        <input type='text' name='ap-paterno' />
+                    </div>
+                    <div>
+                        <label htmlFor='ap-materno'>Apellido materno</label>
+                        <input type='text' name='ap-materno' />
+                    </div>
+                </div>
                 <label htmlFor='address'>Dirección</label>
                 <input type='text' name='address' />
                 <label htmlFor='email'>Correo electrónico</label>

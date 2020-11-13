@@ -1,0 +1,22 @@
+.completed {
+    text-align: center;
+}
+.completed h3 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.completed p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.completed > button {
+    width: 60%;
+    height: 2.7rem;
+    background: #ffffff;
+    border: 1px solid #00d1ce8f;
+    border-radius: 0.7rem;
+}
+.completed i {
+    color: #00d1ce;
+}

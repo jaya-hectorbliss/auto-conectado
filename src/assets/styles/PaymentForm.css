@@ -1,0 +1,13 @@
+.payment-data > div {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .payment-data > div > div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-data > div > div:first-child {
+    margin-right: 2rem;
+  }
