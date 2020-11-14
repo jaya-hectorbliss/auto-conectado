@@ -34,7 +34,6 @@ const MainForm = () => {
             return setModels(docs);
     })
     }
-
     const getCities = () => {
         const cities = db.collection('cities');
         cities.onSnapshot((querySnapshot) => {
