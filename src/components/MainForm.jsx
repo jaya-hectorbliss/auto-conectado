@@ -31,9 +31,11 @@ const MainForm = () => {
         .onSnapshot((querySnapshot) => {
             const docs = [];
             querySnapshot.forEach((doc) => docs.push({...doc.data(), id: doc.id}))
+            console.log(docs)
             return setModels(docs);
     })
     }
+
     const getCities = () => {
         const cities = db.collection('cities');
         cities.onSnapshot((querySnapshot) => {
@@ -49,6 +51,11 @@ const MainForm = () => {
         getCities();
     }, []);
 
+    useEffect(()=>{
+        if(!vehicleSelected) return
+        getModels()
+    }, [vehicleSelected])
+
     return ( 
         <form className='main-form'>
             <select name="car" id="car" onChange={(e)=>setVehicleSelected(e.target.value)}>
@@ -60,7 +67,7 @@ const MainForm = () => {
             <select name="model" id="model" onChange={(e)=>setModelSelected(e.target.value)}>
                 <option disabled selected>Modelo</option>
                 {models &&
-                    vehicles.map((model,index) => <option value={model.id} key={index}>{model.model}</option>)
+                    models.map((model,index) => <option value={model.id} key={index}>{model.model}</option>)
                 }
             </select>
             <select name="year" id="year" onChange={(e)=>setSelectedYear(e.target.value)}>
