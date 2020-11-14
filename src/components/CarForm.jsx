@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import GeneralButton from "./GeneralButton";
-import { useLocalStorage } from '../hooks/useLocalStorage';
 import Loading from './Loading';
-import {db} from '../firebase';
+import {db} from '../assets/firebase';
 
 const style={
     cont: {
@@ -17,8 +16,7 @@ const style={
 }
 
 const CarForm = () => {
-    const [plates, setPlates] = useLocalStorage('plates', '');
-    console.log(plates)
+    const [plates, setPlates] = useState();
     const [enteredPlates, setEnteredPlates] = useState();
     const [found, setFound] = useState();
     const [data, setData] = useState();
@@ -60,7 +58,7 @@ const CarForm = () => {
             <form className='data-form'>
                 <label htmlFor='placa'>Número de placa</label>
                 <div style={style.cont}>
-                    <input type='text' name='placa' onChange={(e) => setEnteredPlates(e.target.value)} value={plates.plates}/>
+                    <input type='text' name='placa' onChange={(e) => setEnteredPlates(e.target.value)}/>
                     <i className="fa fa-search" onClick={findPlates} style={style.icon}></i>
                 </div>
                 {

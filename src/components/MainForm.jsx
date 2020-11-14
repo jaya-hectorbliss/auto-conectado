@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/MainForm.css';
-import {db} from '../firebase';
+import {db} from '../assets/firebase';
 
 const MainForm = () => {
     const [vehicles, setVehicles] = useState();
